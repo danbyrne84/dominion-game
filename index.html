@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <script src="index.js" ></script>
+    </head>
+    <body>
+        <h1>Dominion Randomiser</h1>
+        <form>
+            <div class="main_sections">
+            <!-- Expansion menu -->
+              <div class="flex-container sets">
+                <div>
+                </div>
+                <div>
+                  <input id="base" type="checkbox" class="checkbox" value="active" onClick="filterCards('base')"> <label for="base"> Base Game</label>
+                </div>
+                <div>
+                  <input id="prosperity" type="checkbox" class="checkbox" value="active" onClick="filterCards('prosperity')"> <label for="prosperity"> Prosperity</label>
+                </div>
+                <div>
+                  <input id="adventures" type="checkbox" class="checkbox" value="active" onClick="filterCards('adventures')"> <label for="adventures"> Adventures</label>
+                  </div>
+                   <div class="randomise-button";>
+                   <button onClick="randomise()">Randomise</button>
+                </div>
+                </div>
+              </form>
+        
+            <!-- Kingdom Cards -->
+              <div class="flex-container kCards" id="kCards">
+              </div>
+        
+              <!-- Chosen cards -->
+              <div class="flex-container chosen">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+              </div>
+            </div>
+        </form>
+    </body>
+</html>
